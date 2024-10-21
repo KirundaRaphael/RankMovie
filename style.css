@@ -1,0 +1,139 @@
+
+
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.0;
+    margin: 0;
+    padding: 0;
+ }
+
+
+/* Header Section */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Section */
+main {
+    padding: 1rem;
+}
+
+.top-movies, #new-releases, #genres {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Movie List */
+.top-movies ol, #new-releases ul, #genres ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Arranges movies in column format */
+    gap: 1.5rem;
+    align-items: center;
+   
+
+}
+
+/* Movie Items */
+.top-movies li, #new-releases li {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    max-width: 250px;
+}
+
+.top-movies li img, #new-releases li img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.top-movies li h2, #new-releases li h2 {
+    margin: 0.5rem 0;
+    font-size: 1.4rem;
+    color: #333;
+}
+
+/* Genres Section */
+#genres ul {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+#genres li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#genres li a:hover {
+    color: #007BFF;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .top-movies ol, #new-releases ul, #genres ul {
+        flex-direction: column; /* Forces column layout on small screens */
+    }
+
+    nav ul li {
+        margin-bottom: 1rem;
+    }
+}
+
